@@ -23,6 +23,8 @@ public class Main {
 
         sec1.showMemory();
         System.out.println("Main Thread Terminated");
+
+
     }
 }
 

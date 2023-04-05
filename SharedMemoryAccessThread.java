@@ -1,6 +1,6 @@
 public class SharedMemoryAccessThread extends Thread{
 
-    private CriticalSection sec;
+    public CriticalSection sec;
     private int data;
 
     public SharedMemoryAccessThread(CriticalSection sec, int data){
