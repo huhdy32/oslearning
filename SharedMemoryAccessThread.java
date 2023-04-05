@@ -1,3 +1,5 @@
+import java.util.Queue;
+
 public class SharedMemoryAccessThread extends Thread{
 
     public CriticalSection sec;
@@ -6,6 +8,9 @@ public class SharedMemoryAccessThread extends Thread{
     public SharedMemoryAccessThread(CriticalSection sec, int data){
         this.sec =sec;
         this.data =data;
+    }
+    public int getData() {
+        return this.data;
     }
     public void run(){
         while (true){

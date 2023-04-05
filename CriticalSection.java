@@ -1,7 +1,10 @@
 public class CriticalSection {
     private int[][] memory = new int[100][100];
     private boolean using = false;
-    private int curr_Thread ;
+    private int curr_Thread;
+
+
+
     private void setMemory(int data) {
         for (int i=0; i < memory.length; i++)
             for (int k=0; k < memory.length; k++)
