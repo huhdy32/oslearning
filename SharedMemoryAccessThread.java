@@ -4,7 +4,6 @@ public class SharedMemoryAccessThread extends Thread{
 
     public CriticalSection sec;
     private int data;
-
     public SharedMemoryAccessThread(CriticalSection sec, int data){
         this.sec =sec;
         this.data =data;
